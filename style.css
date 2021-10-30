@@ -7,6 +7,10 @@
   font-family: "Roboto Slab", serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -112,4 +116,28 @@ main img {
   background: black;
   position: absolute;
   opacity: 0.3;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+}
+
+.social ul {
+  display: flex;
+  list-style: none;
+}
+
+.social ul li {
+  margin: 0 10px;
+}
+
+.social li a {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.social li a:hover {
+  transform: translateY(-15px);
 }
