@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
 
 header {
@@ -13,14 +16,100 @@ header {
   color: white;
 }
 
-.logo {
+.logo a {
   width: 185px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-decoration: none;
+  color: white;
 }
 
 .logo img {
   width: 50px;
   height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: rgb(168, 168, 168);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.title-text {
+  color: white;
+}
+
+.title-text h1 {
+  font-size: 140px;
+  font-weight: 400;
+}
+
+.title-text p {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.title a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: rgb(110, 110, 110);
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 50px 10px;
+  text-transform: uppercase;
+  transition: 0.8s;
+}
+
+/* .title .detail {
+  background: black;
+} */
+
+.title a:hover {
+  background: black;
+  color: white;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  opacity: 0.3;
 }
